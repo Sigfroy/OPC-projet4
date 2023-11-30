@@ -94,10 +94,11 @@ background-color: var(--background-color);
     align-items: center;
     background: var(--background-color);
     font-weight: bold;
-    padding: 1.5em 5.5em;
+    padding: 1.5em 5em;
     border-radius: 20px;
     margin-bottom: 1.6em;
     list-style: none;
+    margin-left: 1em;
 }
     .fa-solid {
         margin-right: 0.6em;
@@ -111,9 +112,9 @@ background-color: var(--background-color);
         background: var(--primary-color);
         color: white;
         border-radius: 30px;
-        padding: 0.15em 0.6em;
+        padding: 0.2em 0.6em;
         margin-right: 1em;
-        margin-left: -4.5em;
+        margin-left: -5.8em;
     }
 }
 
