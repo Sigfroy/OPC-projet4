@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
+    <header class="flex header">
         <div class="logo__container">
         <img class="header__logo" src="./Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </div>  
-        <div class="header__location">
+        <div class="flex header__location">
                 <i class="fa-solid fa-location-dot"></i>
                 <p class="header__text">Paris, Belleville</p>
         </div>           
     </header>
-    <main class="main">
+    <main class="flex">
         <section class="main__section">
             <h1 class="section__title">Réservez le menu qui vous convient</h1>
             <article class="section__content">
@@ -25,19 +25,17 @@
                 <button class="section__btn" type="button">Explorer nos restaurants</button>
             </article>
         </section>
-        <section>
-            <h2>Fonctionnement</h2>
-                <ol>
-                    <li><i class="fa-solid fa-location-dot"></i>Choisissez un restaurant</li>
-                    <li><i class="fa-solid fa-list"></i>Composez votre menu</li>
-                    <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
-                </ol>
+        <section class="flex navbar">
+            <h2 class="navbar__title">Fonctionnement</h2>
+                <ul class="navbar__link">
+                    <li class="navbar__btn"><p class="list-style">1</p><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+                    <li class="navbar__btn"><p class="list-style">2</p><i class="fa-solid fa-list"></i>Composez votre menu</li>
+                    <li class="navbar__btn"><p class="list-style">3</p><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                </ul>
         </section>
         <div>
             <section>
-                <div>
                     <h3>Restaurants</h3>
-                </div>
                 <div>
                     <a href="#">
                         <article>
