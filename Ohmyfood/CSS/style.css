@@ -61,6 +61,22 @@
     
         .section__title {
             font-size: 1.5em;
+            margin: 1.38em 1.6em 0 1.6em;
+    }
+
+    .section__content {
+        margin: 0.5em 1em 0 1em;
+    }
+
+    .section__btn {
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        border-radius: 45px;
+        font-size: 1em;
+        color: white;
+        padding: 1em 1.6em;
+        border: none;
+        margin-top: 2.1em;
+        margin-bottom: 4.7em;
     }
 }
 
