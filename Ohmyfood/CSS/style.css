@@ -7,6 +7,7 @@
 }
 
 /****** Color ***********/
+
 :root {
     --primary-color: #9356DC;
     --secondary-color: #FF79DA;
@@ -15,6 +16,7 @@
 }
 
 /****** flex ***********/
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -56,6 +58,8 @@
 }
 }
 
+/****** call to action section ***********/
+
 .main__section {
 background-color: var(--background-color);
 
@@ -80,6 +84,8 @@ background-color: var(--background-color);
     margin-bottom: 4.7em;
     }
 }
+
+/****** navbar ***********/
 
 .navbar {
     margin-top: 1.3em;
@@ -117,6 +123,68 @@ background-color: var(--background-color);
         margin-left: -5.8em;
     }
 }
+
+/****** restaurant section ***********/
+
+.section__restaurant {
+    background-color: var(--background-color);
+    padding: 1em;
+    width: 100%;
+
+    .restaurant__title {
+        text-align: start;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+
+    .section__link {
+        text-decoration: none;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .card__img  {
+        border-radius: 15px 15px 0 0;
+        height: 11em;
+        width: 100%;
+    }
+
+    .badge {
+        background: var(--third-color-color);
+        color: #008766;
+        z-index: 1;
+        position: absolute;
+        margin-left: 15em;
+        margin-top: 0.7em;
+        border-radius: 2px;
+        padding: 0.2em 0.5em;
+    }
+
+    .card__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        margin: 0.5em 1em 1em 1em;
+    }
+
+    .card__text {
+        margin-right: 2.3em;
+        margin-bottom: 1.2em;
+    }
+
+    .fa-regular {
+        font-size: 1.4em;
+        margin-bottom: 1.4em;
+        margin-right: 0.5em;
+    }
+}
+
+/****** footer section ***********/
 
 
 
