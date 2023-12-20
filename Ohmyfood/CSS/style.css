@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,14 +31,17 @@
   align-items: center;
   text-align: center;
 }
+
 .header__logo {
   width: 10em;
   margin-top: 1.5em;
 }
+
 .header .logo__container {
   /* box-shadow: 0px 2px 10px rgb(8, 8, 8), 0px 2px 10px rgba(253, 253, 253, 0.15); */
   width: 100%;
 }
+
 .header .header__location {
   flex-direction: row;
   justify-content: center;
@@ -48,6 +52,7 @@
   width: 100%;
   padding: 1em;
 }
+
 .header .fa-solid {
   margin-right: 0.6em;
 }
@@ -56,13 +61,16 @@
 .main__section {
   background-color: var(--background-color);
 }
+
 .main__section .section__title {
   font-size: 1.5em;
   margin: 1.38em 1.6em 0 1.6em;
 }
+
 .main__section .section__content {
   margin: 0.5em 1em 0 1em;
 }
+
 .main__section .section__btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 45px;
@@ -74,6 +82,7 @@
   margin-bottom: 4.7em;
   transition: var(--background-color) 0.3s ease;
 }
+
 .main__section .section__btn:hover {
   background: linear-gradient(to bottom right, #FF99EE, #A366DD);
 }
@@ -82,10 +91,12 @@
 .navbar {
   margin-top: 1.3em;
 }
+
 .navbar .navbar__title {
   margin-right: 6.65em;
   margin-bottom: 1em;
 }
+
 .navbar .navbar__btn {
   display: flex;
   align-items: center;
@@ -97,12 +108,15 @@
   list-style: none;
   margin-left: 1em;
 }
+
 .navbar .fa-solid {
   margin-right: 0.6em;
 }
+
 .navbar .fa-store {
   color: var(--primary-color);
 }
+
 .navbar .list-style {
   background: var(--primary-color);
   color: white;
@@ -118,24 +132,30 @@
   padding: 1em;
   width: 100%;
 }
+
 .section__restaurant .restaurant__title {
   text-align: start;
   margin-top: 3em;
   margin-bottom: 1em;
   font-size: 1.5em;
 }
+
 .section__restaurant .section__link {
   text-decoration: none;
 }
+
 .section__restaurant .card {
   background-color: white;
   border-radius: 15px;
 }
+
 .section__restaurant .card__img {
   border-radius: 15px 15px 0 0;
   height: 11em;
   width: 100%;
+  object-fit: cover;
 }
+
 .section__restaurant .badge {
   background: var(--third-color-color);
   color: #008766;
@@ -146,6 +166,7 @@
   border-radius: 2px;
   padding: 0.2em 0.5em;
 }
+
 .section__restaurant .card__content {
   display: flex;
   justify-content: space-between;
@@ -153,14 +174,40 @@
   color: black;
   margin: 0.5em 1em 1em 1em;
 }
+
 .section__restaurant .card__text {
   margin-right: 2.3em;
   margin-bottom: 1.2em;
 }
+
 .section__restaurant .fa-regular {
   font-size: 1.4em;
   margin-bottom: 1.4em;
   margin-right: 0.5em;
+}
+
+.section__restaurant .fa-heart {
+  position: absolute;
+}
+
+.full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.full:hover, .full:active {
+  font-size: 1.4em;
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #FF99EE, #A366DD);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.card__heart {
+  margin-right: 1em;
+  margin-bottom: 2em;
 }
 
 /****** footer section ***********/
@@ -171,21 +218,158 @@
   color: white;
   padding: 1em;
 }
+
 .footer__title {
   margin-bottom: 1em;
   font-family: "Shrikhand", serif;
   font-size: 0.8em;
 }
+
 .footer__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
 }
+
 .footer__link {
   display: flex;
   list-style: none;
   margin-bottom: 0.5em;
 }
+
 .fa-solid {
+  margin-right: 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/****** Color ***********/
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --third-color: #99E2D0;
+  --background-color: #F6F6F6;
+}
+
+/****** Header ***********/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header .header__image {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  border-radius: 40px 40px 0 0;
+  padding: 1em;
+  top: 15em;
+  left: 0;
+  right: 0;
+}
+.main .main__title-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.main .main__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.main .fa-regular {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+.main .fa-solid {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+.main .main__section-title {
+  border-bottom: var(--third-color) 2px solid;
+  display: inline-block;
+  width: 15%;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.main .main__article {
+  background: white;
+  border-radius: 15px;
+}
+.main .main__card-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+.main .main_card {
+  font-size: 1em;
+}
+.main .main__price {
+  margin-top: 1.5em;
+}
+.main .main__btn {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 45px;
+  font-size: 1em;
+  color: white;
+  padding: 1em 1.4em;
+  margin: 1em 5em 0 5em;
+  border: none;
+  transition: var(--background-color) 0.3s ease;
+}
+.main .main__btn:hover {
+  background: linear-gradient(to bottom right, #FF99EE, #A366DD);
+}
+
+/****** footer section ***********/
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  color: white;
+  padding: 1em;
+}
+.footer .footer__title {
+  margin-bottom: 1em;
+  font-family: "Shrikhand", serif;
+  font-size: 0.8em;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.footer .footer__link {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+.footer .fa-solid {
   margin-right: 1em;
 }
