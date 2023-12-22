@@ -210,37 +210,6 @@
   margin-bottom: 2em;
 }
 
-/****** footer section ***********/
-.footer {
-  display: flex;
-  flex-direction: column;
-  background: #353535;
-  color: white;
-  padding: 1em;
-}
-
-.footer__title {
-  margin-bottom: 1em;
-  font-family: "Shrikhand", serif;
-  font-size: 0.8em;
-}
-
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-
-.footer__link {
-  display: flex;
-  list-style: none;
-  margin-bottom: 0.5em;
-}
-
-.fa-solid {
-  margin-right: 1em;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -280,7 +249,8 @@
   background: var(--background-color);
   border-radius: 40px 40px 0 0;
   padding: 1em;
-  top: 15em;
+  position: relative;
+  top: -3em;
   left: 0;
   right: 0;
 }
@@ -296,18 +266,31 @@
   font-size: 1.5em;
   margin-bottom: 1em;
 }
-.main .fa-regular {
-  margin-bottom: 1em;
-  margin-right: 1em;
+.main .fa-heart {
+  font-size: 1.4em;
+  position: absolute;
 }
-.main .fa-solid {
-  margin-bottom: 1em;
+.main .full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.main .full:hover, .main .full:active {
+  font-size: 1.4em;
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #FF99EE, #A366DD);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.main .card__heart {
   margin-right: 1em;
+  margin-bottom: 2em;
 }
 .main .main__section-title {
   border-bottom: var(--third-color) 2px solid;
   display: inline-block;
-  width: 15%;
+  width: 8%;
   margin-bottom: 0.5em;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -331,6 +314,17 @@
 .main .main__price {
   margin-top: 1.5em;
 }
+.main .main__card-container .checked {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+  background-color: transparent;
+}
+.main .main__card-container:hover .checked {
+  opacity: 1;
+  transform: translateX(0%);
+  background-color: var(--third-color);
+}
 .main .main__btn {
   display: flex;
   justify-content: center;
@@ -347,7 +341,6 @@
   background: linear-gradient(to bottom right, #FF99EE, #A366DD);
 }
 
-/****** footer section ***********/
 .footer {
   display: flex;
   flex-direction: column;
