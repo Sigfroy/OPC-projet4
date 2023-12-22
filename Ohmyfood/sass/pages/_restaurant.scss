@@ -95,9 +95,49 @@
         font-weight: lighter;
     }
 
+    @-webkit-keyframes fade-in-top {
+        0% {
+            -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in-top {
+        0% {
+            -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     .main__article  {
         background: white;
         border-radius: 15px;
+        opacity: 0;
+        -webkit-animation: fade-in-top 1s ease forwards;
+        animation: fade-in-top 1s ease forwards;
+    }
+
+    .entree {
+        animation-delay: 0s;
+    }
+    
+    .plat {
+        animation-delay: 0.5s; 
+    }
+    
+    .dessert {
+        animation-delay: 1s; 
     }
 
     .main__card-container {
