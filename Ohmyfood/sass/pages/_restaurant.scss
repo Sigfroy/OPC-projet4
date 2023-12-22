@@ -54,6 +54,13 @@
         text-align: center;
     }
 
+    .overlay {
+        background: var(--background-color);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 3em;
+    }
+
     .main__title {
         font-family: "Shrikhand", serif;
         font-size: 1.5em;
@@ -124,20 +131,24 @@
         background: white;
         border-radius: 15px;
         opacity: 0;
-        -webkit-animation: fade-in-top 1s ease forwards;
+        animation: fade-in-top 1s ease forwards;
+    }
+
+    .animation {
+        opacity: 0;
         animation: fade-in-top 1s ease forwards;
     }
 
     .entree {
-        animation-delay: 0s;
+        animation-delay: 1s;
     }
     
     .plat {
-        animation-delay: 0.5s; 
+        animation-delay: 2s; 
     }
     
     .dessert {
-        animation-delay: 1s; 
+        animation-delay: 3s; 
     }
 
     .main__card-container {
@@ -151,22 +162,43 @@
 
     .main_card {
         font-size: 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        
+    }
+
+    .main__card > h3, .main__card > p {
+    //     white-space: nowrap;
+    //     overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .main__price {
         margin-top: 1.5em;
+        border: solid 1px black;
+    }
+
+    .border {
+        border: solid 1px black;
+    }
+
+    .fa-circle-check {
+        padding: 2em;
     }
 
     .main__card-container .checked {
         opacity: 0;
-        transform: translateX(100%);
-        transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+     /*  transform: translateX(100%);
+        transition: opacity 0.3s, transform 0.3s, background-color 0.3s; */
+        transition: width 1s ease-in-out;
         background-color: transparent;
+        width: 0;
     }
     
     .main__card-container:hover .checked {
         opacity: 1;
-        transform: translateX(0%);
+        width: 10em;
+     /*   transform: translateX(0%); */
         background-color: var(--third-color);
     }
 
