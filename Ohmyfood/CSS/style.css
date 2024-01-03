@@ -358,15 +358,17 @@
 .main .main__card {
   font-size: 1em;
   white-space: nowrap;
+  overflow: hidden;
 }
 .main .main__card > h3,
 .main .main__card > p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: width 0.3s ease-in-out;
 }
 .main .fa-circle-check {
-  padding: 2em;
+  padding: 1.5em;
 }
 .main .checked {
   display: flex;
@@ -378,9 +380,6 @@
   overflow: hidden; /* Empêche le dépassement du contenu */
   white-space: nowrap; /* Force le contenu sur une seule ligne */
   text-overflow: ellipsis; /* Ajoute des points de suspension pour le texte qui dépasse */
-  width: 0;
-  transition: width 0.3s ease-in-out;
-  background-color: transparent;
 }
 .main .checked i {
   display: flex; /* Pour assurer le centrage de l'icône */
@@ -397,7 +396,7 @@
 }
 .main .main__card-container:hover .checked {
   opacity: 1;
-  width: 3em;
+  width: 5em;
   background-color: var(--third-color);
 }
 .main .main__btn {

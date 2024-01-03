@@ -164,7 +164,7 @@
 	.main__card {
 		font-size: 1em;
 		white-space: nowrap;
-		// overflow: hidden;
+		overflow: hidden;
 	}
 
 	.main__card > h3,
@@ -172,10 +172,11 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		transition: width 0.3s ease-in-out;
 	}
 
 	.fa-circle-check {
-		padding: 2em;
+		padding: 1.5em;
 	}
 
 	.checked {
@@ -188,9 +189,6 @@
 		overflow: hidden; /* Empêche le dépassement du contenu */
 		white-space: nowrap; /* Force le contenu sur une seule ligne */
 		text-overflow: ellipsis; /* Ajoute des points de suspension pour le texte qui dépasse */
-		width: 0;
-		transition: width 0.3s ease-in-out;
-		background-color: transparent;
 	}
 
 	.checked i {
@@ -206,13 +204,11 @@
 		background-color: transparent;
 		width: 0;
 		height: 100%;
-
-		// transform: translate(-50%, -50%);
 	}
 
 	.main__card-container:hover .checked {
 		opacity: 1;
-		width: 3em;
+		width: 5em;
 		background-color: var(--third-color);
 	}
 
