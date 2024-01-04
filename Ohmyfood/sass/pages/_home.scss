@@ -23,52 +23,82 @@
 	text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: flex-start;
+		padding-left: 1em;
+	}
+
+	.navbar__title {
+		margin-bottom: 1em;
+		margin-left: 1em;
+		text-align: left;
+	}
+
+	.navbar__link {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navbar__btn {
+		margin: 0.5em;
+		flex: 30%;
+	}
+}
+
 /****** Loader ***********/
 /* Styles du loader */
 .loader__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); 
-  z-index: 1; /* Assure que le loader s'affiche au-dessus du reste */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 1;
 }
 
 /* Styles pour le spinner */
 .loader__animation {
-  border: 4px solid var(--primary-color); 
-  border-top: 4px solid #f6f6f6; 
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1.5s linear; 
-  position: relative;
-  opacity: 1; 
+	border: 4px solid var(--primary-color);
+	border-top: 4px solid #f6f6f6;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1.5s linear;
+	position: relative;
+	opacity: 1;
 }
 
 /* Animation de rotation du spinner */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 /* Faire disparaitre le loader après l'animation */
 .loader__container {
-  animation: hideLoader 0s forwards 3s; /* Cacher le loader après 3 secondes */
+	animation: hideLoader 0s forwards 3s; /* Cacher le loader après 3 secondes */
 }
 
 /* Animation pour cacher le loader */
 @keyframes hideLoader {
-  to {
-    opacity: 0; /* Opacité à zéro pour cacher le loader */
-    visibility: hidden; /* Visibilité cachée */
-  }
+	to {
+		opacity: 0; /* Opacité à zéro pour cacher le loader */
+		visibility: hidden; /* Visibilité cachée */
+	}
 }
-
 
 /****** Header ***********/
 .header {
@@ -128,37 +158,37 @@ logo__container {
 /****** navbar ***********/
 .navbar {
 	margin-top: 1.3em;
-  margin-bottom: 2em;
+	margin-bottom: 2em;
 
-&__title {
-	margin-right: 6.65em;
-	margin-bottom: 1em;
-}
-&__btn {
-	display: flex;
-	align-items: center;
-	background: var(--background-color);
-	font-weight: bold;
-	padding: 1.5em 5em;
-	border-radius: 20px;
-	margin-bottom: 1.6em;
-	list-style: none;
-	margin-left: 1em;
-}
-.fa-solid {
-	margin-right: 0.6em;
-}
-.fa-store {
-	color: var(--primary-color);
-}
-.list-style {
-	background: var(--primary-color);
-	color: white;
-	border-radius: 30px;
-	padding: 0.2em 0.6em;
-	margin-right: 1em;
-	margin-left: -5.8em;
-}
+	&__title {
+		margin-right: 6.65em;
+		margin-bottom: 1em;
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		background: var(--background-color);
+		font-weight: bold;
+		padding: 1.5em 5em;
+		border-radius: 20px;
+		margin-bottom: 1.6em;
+		list-style: none;
+		margin-left: 1em;
+	}
+	.fa-solid {
+		margin-right: 0.6em;
+	}
+	.fa-store {
+		color: var(--primary-color);
+	}
+	.list-style {
+		background: var(--primary-color);
+		color: white;
+		border-radius: 30px;
+		padding: 0.2em 0.6em;
+		margin-right: 1em;
+		margin-left: -5.8em;
+	}
 }
 
 /****** restaurant section ***********/
