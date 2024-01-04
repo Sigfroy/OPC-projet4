@@ -11,10 +11,10 @@
 
 /****** Color ***********/
 :root {
-  --primary-color: #9356DC;
-  --secondary-color: #FF79DA;
-  --third-color-color: #99E2D0;
-  --background-color: #F6F6F6;
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --third-color-color: #99e2d0;
+  --background-color: #f6f6f6;
 }
 
 /****** flex ***********/
@@ -49,7 +49,7 @@
   margin-top: 0.3em;
   font-size: 1em;
   font-weight: bold;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   width: 100%;
   padding: 1em;
 }
@@ -73,7 +73,7 @@
 }
 
 .main__section .section__btn {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 45px;
   font-size: 1em;
   color: white;
@@ -85,12 +85,13 @@
 }
 
 .main__section .section__btn:hover {
-  background: linear-gradient(to bottom right, #FF99EE, #A366DD);
+  background: linear-gradient(to bottom right, #ff99ee, #a366dd);
 }
 
 /****** navbar ***********/
 .navbar {
   margin-top: 1.3em;
+  margin-bottom: 2em;
 }
 
 .navbar .navbar__title {
@@ -197,11 +198,12 @@
   transition-duration: 0.2s;
 }
 
-.full:hover, .full:active {
+.full:hover,
+.full:active {
   font-size: 1.4em;
   opacity: 1;
   color: transparent;
-  background-image: linear-gradient(to bottom right, #FF99EE, #A366DD);
+  background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -251,11 +253,12 @@
   border-radius: 40px 40px 0 0;
   padding: 1em;
   position: relative;
+  z-index: 1;
   top: -3em;
   left: 0;
   right: 0;
 }
-.main .main__title-container {
+.main .main__container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -377,9 +380,6 @@
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  overflow: hidden; /* Empêche le dépassement du contenu */
-  white-space: nowrap; /* Force le contenu sur une seule ligne */
-  text-overflow: ellipsis; /* Ajoute des points de suspension pour le texte qui dépasse */
 }
 .main .checked i {
   display: flex; /* Pour assurer le centrage de l'icône */
@@ -410,6 +410,7 @@
   margin: 1em 5em 0 5em;
   border: none;
   transition: var(--background-color) 0.3s ease;
+  margin-bottom: 1em;
 }
 .main .main__btn:hover {
   background: linear-gradient(to bottom right, #ff99ee, #a366dd);

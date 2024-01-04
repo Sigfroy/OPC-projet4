@@ -42,11 +42,12 @@
 	border-radius: 40px 40px 0 0;
 	padding: 1em;
 	position: relative;
+	z-index: 1;
 	top: -3em;
 	left: 0;
 	right: 0;
 
-	.main__title-container {
+	.main__container {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row;
@@ -186,9 +187,6 @@
 		height: 100%;
 		border-top-right-radius: 15px;
 		border-bottom-right-radius: 15px;
-		overflow: hidden; /* Empêche le dépassement du contenu */
-		white-space: nowrap; /* Force le contenu sur une seule ligne */
-		text-overflow: ellipsis; /* Ajoute des points de suspension pour le texte qui dépasse */
 	}
 
 	.checked i {
@@ -223,6 +221,7 @@
 		margin: 1em 5em 0 5em;
 		border: none;
 		transition: var(--background-color) 0.3s ease;
+		margin-bottom: 1em;
 	}
 
 	.main__btn:hover {
