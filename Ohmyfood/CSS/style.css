@@ -63,16 +63,16 @@
   background-color: var(--background-color);
 }
 
-.main__section .section__title {
+.section__title {
   font-size: 1.5em;
   margin: 1.38em 1.6em 0 1.6em;
 }
 
-.main__section .section__content {
+.section__content {
   margin: 0.5em 1em 0 1em;
 }
 
-.main__section .section__btn {
+.section__btn {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 45px;
   font-size: 1em;
@@ -84,7 +84,7 @@
   transition: var(--background-color) 0.3s ease;
 }
 
-.main__section .section__btn:hover {
+.section__btn:hover {
   background: linear-gradient(to bottom right, #ff99ee, #a366dd);
 }
 
@@ -93,13 +93,11 @@
   margin-top: 1.3em;
   margin-bottom: 2em;
 }
-
-.navbar .navbar__title {
+.navbar__title {
   margin-right: 6.65em;
   margin-bottom: 1em;
 }
-
-.navbar .navbar__btn {
+.navbar__btn {
   display: flex;
   align-items: center;
   background: var(--background-color);
@@ -110,15 +108,12 @@
   list-style: none;
   margin-left: 1em;
 }
-
 .navbar .fa-solid {
   margin-right: 0.6em;
 }
-
 .navbar .fa-store {
   color: var(--primary-color);
 }
-
 .navbar .list-style {
   background: var(--primary-color);
   color: white;
@@ -135,30 +130,30 @@
   width: 100%;
 }
 
-.section__restaurant .restaurant__title {
+.restaurant__title {
   text-align: start;
   margin-top: 3em;
   margin-bottom: 1em;
   font-size: 1.5em;
 }
 
-.section__restaurant .section__link {
+.section__link {
   text-decoration: none;
 }
 
-.section__restaurant .card {
+.card {
   background-color: white;
   border-radius: 15px;
 }
 
-.section__restaurant .card__img {
+.card__img {
   border-radius: 15px 15px 0 0;
   height: 11em;
   width: 100%;
   object-fit: cover;
 }
 
-.section__restaurant .badge {
+.badge {
   background: var(--third-color-color);
   color: #008766;
   z-index: 1;
@@ -169,7 +164,7 @@
   padding: 0.2em 0.5em;
 }
 
-.section__restaurant .card__content {
+.card__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,18 +172,18 @@
   margin: 0.5em 1em 1em 1em;
 }
 
-.section__restaurant .card__text {
+.card__text {
   margin-right: 2.3em;
   margin-bottom: 1.2em;
 }
 
-.section__restaurant .fa-regular {
+.fa-regular {
   font-size: 1.4em;
   margin-bottom: 1.4em;
   margin-right: 0.5em;
 }
 
-.section__restaurant .fa-heart {
+.fa-heart {
   position: absolute;
 }
 
