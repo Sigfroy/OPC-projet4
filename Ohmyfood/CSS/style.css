@@ -25,30 +25,6 @@
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
-  .navbar {
-    justify-content: flex-start; /* Aligner les éléments à gauche */
-    align-items: flex-start; /* Aligner les éléments en haut */
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
-  }
-  .navbar__title {
-    text-align: left;
-  }
-  .navbar__link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Aligner les éléments à gauche */
-  }
-  .navbar__btn {
-    margin: 0.7em;
-    flex: 30%;
-    padding: 0.9em 5em;
-  }
-}
-
 /****** Loader ***********/
 /* Styles du loader */
 .loader__container {
@@ -107,7 +83,7 @@
 
 .header__logo {
   width: 10em;
-  margin-top: 1em;
+  margin-top: 1.3em;
 }
 
 logo__container {
@@ -137,7 +113,7 @@ logo__container {
 
 .section__title {
   font-size: 1.5em;
-  margin: 1.73em 1.6em 0 1.6em;
+  margin: 1.38em 1.6em 0 1.6em;
 }
 
 .section__content {
@@ -166,8 +142,9 @@ logo__container {
   margin-bottom: 2em;
 }
 .navbar__title {
-  margin-right: 6.65em;
   margin-bottom: 1em;
+  width: 100%;
+  margin-right: 5em;
 }
 .navbar__btn {
   display: flex;
@@ -178,6 +155,7 @@ logo__container {
   border-radius: 20px;
   margin-bottom: 1.6em;
   list-style: none;
+  margin-left: 1em;
 }
 .navbar .fa-solid {
   margin-right: 0.6em;
@@ -195,36 +173,31 @@ logo__container {
 }
 
 /****** restaurant section ***********/
-.section__restaurant {
+.restaurant {
   background-color: var(--background-color);
   padding: 1em;
   width: 100%;
 }
-
 .restaurant__title {
   text-align: start;
-  margin-top: 1.6em;
+  margin-top: 3em;
   margin-bottom: 1em;
   font-size: 1.5em;
 }
-
-.section__link {
+.restaurant .section__link {
   text-decoration: none;
 }
-
-.card {
+.restaurant .card {
   background-color: white;
   border-radius: 15px;
 }
-
-.card__img {
+.restaurant .card__img {
   border-radius: 15px 15px 0 0;
   height: 11em;
   width: 100%;
   object-fit: cover;
 }
-
-.badge {
+.restaurant .badge {
   background: var(--third-color-color);
   color: #008766;
   z-index: 1;
@@ -234,38 +207,32 @@ logo__container {
   border-radius: 2px;
   padding: 0.2em 0.5em;
 }
-
-.card__content {
+.restaurant .card__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: black;
   margin: 0.5em 1em 1em 1em;
 }
-
-.card__text {
+.restaurant .card__text {
   margin-right: 2.3em;
   margin-bottom: 1.2em;
 }
-
-.fa-regular {
+.restaurant .fa-regular {
   font-size: 1.4em;
   margin-bottom: 1.4em;
   margin-right: 0.5em;
 }
-
-.fa-heart {
+.restaurant .fa-heart {
   position: absolute;
 }
-
-.full {
+.restaurant .full {
   opacity: 0;
   transition-property: all;
   transition-duration: 0.2s;
 }
-
-.full:hover,
-.full:active {
+.restaurant .full:hover,
+.restaurant .full:active {
   font-size: 1.4em;
   opacity: 1;
   color: transparent;
@@ -273,12 +240,59 @@ logo__container {
   background-clip: text;
   -webkit-background-clip: text;
 }
-
-.card__heart {
+.restaurant .card__heart {
   margin-right: 1em;
   margin-bottom: 2em;
 }
 
+@media screen and (min-width: 1440px) {
+  .header__logo {
+    margin-bottom: 1em;
+    margin-top: 1.7em;
+    margin-left: 0.6em;
+    width: 13em;
+  }
+  .section__title {
+    font-size: 2.4em;
+    margin: 0.8em 1.2em 0 1.6em;
+  }
+  .section__content {
+    margin: unset;
+    margin-top: 1.8em;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    padding-left: 1em;
+  }
+  .navbar__title {
+    margin-bottom: 1em;
+    margin-right: 33em;
+  }
+  .navbar__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar__btn {
+    margin: 1em;
+  }
+  .restaurant {
+    padding-right: 7em;
+    padding-left: 7em;
+  }
+  .restaurant__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 45%;
+    margin-bottom: 2em;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -302,29 +316,36 @@ logo__container {
   align-items: center;
   text-align: center;
 }
-.header .header__container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.header .header__image {
+.header__arrow {
+  margin-right: auto;
+  flex: 20%;
+  height: 5em;
+}
+.header__image {
   display: flex;
+  padding-top: 1.3em;
+  padding-bottom: 1em;
+  width: 10em;
   align-items: center;
+  text-align: center;
+  flex: 80%;
+  height: 4em;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   background: var(--background-color);
-  border-radius: 40px 40px 0 0;
   padding: 1em;
   position: relative;
   z-index: 1;
-  top: -3em;
-  left: 0;
-  right: 0;
 }
-.main .main__container {
+.main__container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -332,12 +353,16 @@ logo__container {
   text-align: center;
 }
 .main .overlay {
-  background: var(--background-color);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  height: 3em;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: var(--background-color);
+  position: absolute;
+  top: -2em;
+  left: 0;
+  width: 100%;
+  height: 50px;
 }
-.main .main__title {
+.main__title {
   font-family: "Shrikhand", serif;
   font-size: 1.5em;
   margin-bottom: 1em;
@@ -493,7 +518,9 @@ logo__container {
 .footer .footer__title {
   margin-bottom: 1em;
   font-family: "Shrikhand", serif;
-  font-size: 0.8em;
+  font-size: 1em;
+  margin-top: 0.4em;
+  margin-left: 0.9em;
 }
 .footer .footer__list {
   display: flex;
@@ -507,4 +534,19 @@ logo__container {
 }
 .footer .fa-solid {
   margin-right: 1em;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    flex-direction: row; /* Afficher les éléments en ligne */
+    justify-content: space-around; /* Espacement équitable entre les éléments */
+    align-items: center; /* Centrer les éléments horizontalement */
+    text-align: left; /* Alignement du texte à gauche */
+  }
+  .footer__list {
+    flex-direction: row; /* Afficher les éléments en ligne */
+  }
+  .footer__link {
+    margin: 0; /* Supprimer la marge entre les éléments */
+  }
 }

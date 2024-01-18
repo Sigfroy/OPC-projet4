@@ -4,7 +4,6 @@
     background: #353535;
     color: white;
     padding: 1em;
-    margin-top: 3em;
 
 .footer__title {
     margin-bottom: 1em;
@@ -29,4 +28,21 @@
 .fa-solid {
     margin-right: 1em;
 }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        flex-direction: row; /* Afficher les éléments en ligne */
+        justify-content: space-around; /* Espacement équitable entre les éléments */
+        align-items: center; /* Centrer les éléments horizontalement */
+        text-align: left; /* Alignement du texte à gauche */
+    }
+
+    .footer__list {
+        flex-direction: row; /* Afficher les éléments en ligne */
+    }
+
+    .footer__link {
+        margin: 0; /* Supprimer la marge entre les éléments */
+    }
 }
