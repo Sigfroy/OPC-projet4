@@ -5,7 +5,7 @@
     color: white;
     padding: 1em;
 
-.footer__title {
+&__title {
     margin-bottom: 1em;
     font-family: "Shrikhand", serif;
     font-size: 1em;
@@ -13,13 +13,13 @@
     margin-left: 0.9em;
 }
 
-.footer__list {
+&__list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
 
-.footer__link {
+&__link {
     display: flex;
     list-style: none;
     margin-bottom: 0.5em;
@@ -32,17 +32,23 @@
 
 @media screen and (min-width: 1440px) {
     .footer {
-        flex-direction: row; /* Afficher les éléments en ligne */
-        justify-content: space-around; /* Espacement équitable entre les éléments */
-        align-items: center; /* Centrer les éléments horizontalement */
-        text-align: left; /* Alignement du texte à gauche */
+        flex-direction: row-reverse; 
+        align-items: center; 
+        padding-top: 2em;
+    }
+
+    .footer__title {
+        margin-bottom: unset;
+        margin-left: 5em;
+        margin-right: 1.5em;
     }
 
     .footer__list {
-        flex-direction: row; /* Afficher les éléments en ligne */
+        flex-direction: row;
     }
 
     .footer__link {
-        margin: 0; /* Supprimer la marge entre les éléments */
+        margin: 1em;
     }
 }
+
