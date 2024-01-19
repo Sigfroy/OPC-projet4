@@ -231,14 +231,26 @@ logo__container {
   transition-property: all;
   transition-duration: 0.2s;
 }
-.restaurant .full:hover,
-.restaurant .full:active {
+.restaurant .card__heart:hover > .full,
+.restaurant .card__heart:active > .full {
   font-size: 1.4em;
   opacity: 1;
-  color: transparent;
   background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
   background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
+  animation: filling-heart 1s ease-in-out both;
+}
+@keyframes filling-heart {
+  0% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .restaurant .card__heart {
   margin-right: 1em;
@@ -281,6 +293,15 @@ logo__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .palette__badge {
+    margin-left: 27em;
+  }
+  .restaurant .badge {
+    margin-left: 27em;
+  }
+  .note__badge {
+    margin-left: 68em;
   }
   .card {
     width: 45%;
@@ -327,7 +348,6 @@ logo__container {
   text-align: center;
   flex: 80%;
   height: 2.5em;
-  margin-right: 3em;
 }
 
 .main {
@@ -510,9 +530,7 @@ logo__container {
   .header__arrow {
     text-align: left;
     margin-left: 1.5em;
-  }
-  .header__logo {
-    margin-right: 13em;
+    flex: unset;
   }
   .restaurant__image {
     width: 100%;
@@ -535,7 +553,11 @@ logo__container {
   }
   .card__heart {
     width: 40%;
-    text-align: left;
+    text-align: right;
+  }
+  .main .main__section-title {
+    width: 4%;
+    font-size: 1em;
   }
   .main__btn {
     width: 20%;

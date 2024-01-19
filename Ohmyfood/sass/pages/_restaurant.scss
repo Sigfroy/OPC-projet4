@@ -42,7 +42,6 @@
 		text-align: center;
 		flex: 80%;
 		height: 2.5em;
-		margin-right: 3em;
 	}
 }
 
@@ -251,9 +250,7 @@
 	.header__arrow {
 		text-align: left;
 		margin-left: 1.5em;
-	}
-	.header__logo {
-		margin-right: 13em;
+		flex: unset;
 	}
 	.restaurant__image {
 		width: 100%;
@@ -277,7 +274,11 @@
 	}
 	.card__heart {
 		width: 40%;
-		text-align: left;
+		text-align: right;
+	}
+	.main .main__section-title {
+		width: 4%;
+		font-size: 1em;
 	}
 	.main__btn {
 		width: 20%;
