@@ -27,23 +27,22 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		width: 100%;
 	}
 
 	&__arrow {
-		margin-right: auto;
 		flex: 20%;
-		height: 5em;
 	}
 
-	&__image {
+	&__logo {
 		display: flex;
-		padding-top: 1.3em;
 		padding-bottom: 1em;
 		width: 10em;
 		align-items: center;
 		text-align: center;
 		flex: 80%;
-		height: 4em;
+		height: 2.5em;
+		margin-right: 3em;
 	}
 }
 
@@ -54,7 +53,6 @@
 	padding: 1em;
 	position: relative;
 	z-index: 1;
-
 
 	&__container {
 		display: flex;
@@ -103,8 +101,8 @@
 	}
 
 	.card__heart {
-		margin-right: 1em;
-		margin-bottom: 2em;
+		margin-right: 3em;
+		margin-bottom: 2.8em;
 	}
 
 	.main__section-title {
@@ -190,8 +188,14 @@
 		transition: width 0.3s ease-in-out;
 	}
 
+	.main__price {
+		margin-right: 1em;
+		margin-top: 1.6em;
+	}
+
 	.fa-circle-check {
 		padding: 1.5em;
+		margin-right: 1em;
 	}
 
 	.checked {
@@ -240,5 +244,42 @@
 
 	.main__btn:hover {
 		background: linear-gradient(to bottom right, #ff99ee, #a366dd);
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.header__arrow {
+		text-align: left;
+		margin-left: 1.5em;
+	}
+	.header__logo {
+		margin-right: 13em;
+	}
+	.restaurant__image {
+		width: 100%;
+		object-fit: cover;
+		height: 30em;
+	}
+
+	.main {
+		width: 70%;
+		margin-left: 14.5em;
+		align-items: center;
+	}
+	.menu {
+		width: 70%;
+	}
+	.main__title {
+		width: 60%;
+		text-align: end;
+		margin-right: 1em;
+		margin-left: 8em;
+	}
+	.card__heart {
+		width: 40%;
+		text-align: left;
+	}
+	.main__btn {
+		width: 20%;
 	}
 }
