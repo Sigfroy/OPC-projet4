@@ -272,12 +272,20 @@
 		margin-left: 1.5em;
 		flex: unset;
 	}
+	.header__text {
+		margin-left: 1em;
+	}
 	.restaurant__image {
 		width: 100%;
 		object-fit: cover;
 		height: 30em;
 	}
-
+	.restaurant .card__text {
+		margin-bottom: 0.2em;
+	}
+	.restaurant .card__heart {
+		margin-right: 2em;
+	}
 	.main {
 		width: 70%;
 		margin-left: 14.5em;
@@ -294,7 +302,7 @@
 	}
 	.card__heart {
 		width: 30%;
-		text-align: left;
+		text-align: right;
 	}
 	.main .main__section-title {
 		width: 30%;

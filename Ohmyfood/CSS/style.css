@@ -223,35 +223,60 @@
 .restaurant .fa-heart {
   position: absolute;
 }
+.restaurant .fa-heart {
+  position: absolute;
+}
 .restaurant .full {
   opacity: 0;
-  transition-property: all;
-  transition-duration: 0.2s;
+  transition: opacity 0.2s;
 }
-.restaurant .card__heart:hover > .full,
-.restaurant .card__heart:active > .full {
+.restaurant .card__heart:hover > .full {
   font-size: 1.4em;
   opacity: 1;
   background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: fillHeart 1s ease-in-out both;
+  animation: fillHeart 0.15s forwards;
+}
+.restaurant .card__heart > .full {
+  animation: emptyHeart 2s reverse forwards;
 }
 @keyframes fillHeart {
   0% {
-    transform: scale(0.2);
-  }
-  40% {
-    transform: scale(0.5);
+    transform: scaleY(0);
+    transform-origin: bottom;
   }
   100% {
-    transform: scale(1);
+    transform: scaleY(1);
+    transform-origin: bottom;
   }
 }
-.restaurant .card__heart {
-  margin-right: 1em;
-  margin-bottom: 2em;
+@keyframes emptyHeart {
+  0% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  20% {
+    transform: scaleY(0.8);
+    transform-origin: top;
+  }
+  40% {
+    transform: scaleY(0.6);
+    transform-origin: top;
+  }
+  60% {
+    transform: scaleY(0.4);
+    transform-origin: top;
+  }
+  80% {
+    transform: scaleY(0.2);
+    transform-origin: top;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -548,10 +573,19 @@
     margin-left: 1.5em;
     flex: unset;
   }
+  .header__text {
+    margin-left: 1em;
+  }
   .restaurant__image {
     width: 100%;
     object-fit: cover;
     height: 30em;
+  }
+  .restaurant .card__text {
+    margin-bottom: 0.2em;
+  }
+  .restaurant .card__heart {
+    margin-right: 2em;
   }
   .main {
     width: 70%;
@@ -568,7 +602,7 @@
   }
   .card__heart {
     width: 30%;
-    text-align: left;
+    text-align: right;
   }
   .main .main__section-title {
     width: 30%;

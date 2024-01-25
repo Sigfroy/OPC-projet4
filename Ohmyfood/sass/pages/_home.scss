@@ -80,31 +80,31 @@
 	align-items: center;
 	text-align: center;
 
-.logo__container {
-	display: flex;
-	width: 100%;
-	align-items: center;
-}
+	.logo__container {
+		display: flex;
+		width: 100%;
+		align-items: center;
+	}
 
-&__logo {
-	width: 10em;
-	margin-top: 1.3em;
-}
+	&__logo {
+		width: 10em;
+		margin-top: 1.3em;
+	}
 
-&__location {
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 0.3em;
-	font-size: 1em;
-	font-weight: bold;
-	background-color: #eaeaea;
-	width: 100%;
-	padding: 1em;
-	box-shadow: 1px 5px 5px lightgrey;
-}
-// .fa-solid {
-// 	margin-right: 0.6em;
-// }
+	&__location {
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 0.3em;
+		font-size: 1em;
+		font-weight: bold;
+		background-color: #eaeaea;
+		width: 100%;
+		padding: 1em;
+		box-shadow: 1px 5px 5px lightgrey;
+	}
+	// .fa-solid {
+	// 	margin-right: 0.6em;
+	// }
 }
 
 /****** call to action section ***********/
@@ -229,46 +229,72 @@
 		position: absolute;
 	}
 
-	.full {
-		opacity: 0;
-		transition-property: all;
-		transition-duration: 0.2s;
+	.fa-heart {
+		position: absolute;
 	}
 
-	.card__heart:hover > .full,
-	.card__heart:active > .full {
+	.full {
+		opacity: 0;
+		transition: opacity 0.2s;
+	}
+
+	.card__heart:hover > .full {
 		font-size: 1.4em;
 		opacity: 1;
 		background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
-		animation: fillHeart 1s ease-in-out both;
+		animation: fillHeart 0.15s forwards;
+	}
+
+	.card__heart > .full {
+		animation: emptyHeart 2s reverse forwards;
 	}
 
 	@keyframes fillHeart {
 		0% {
-			transform: scale(0.2);
-		}
-		40% {
-			transform:scale(0.5);
+			transform: scaleY(0);
+			transform-origin: bottom;
 		}
 		100% {
-			transform:scale(1);
+			transform: scaleY(1);
+			transform-origin: bottom;
 		}
 	}
-	
 
-	.card__heart {
-		margin-right: 1em;
-		margin-bottom: 2em;
+	@keyframes emptyHeart {
+		0% {
+			transform: scaleY(1);
+			transform-origin: top;
+		}
+		20% {
+			transform: scaleY(0.8);
+			transform-origin: top;
+		}
+		40% {
+			transform: scaleY(0.6);
+			transform-origin: top;
+		}
+		60% {
+			transform: scaleY(0.4);
+			transform-origin: top;
+		}
+		80% {
+			transform: scaleY(0.2);
+			transform-origin: top;
+		}
+		100% {
+			transform: scaleY(0);
+			transform-origin: top;
+		}
 	}
 }
 
 @media screen and (min-width: 1440px) {
-.header__location {
-	box-shadow: unset;
-}
+	.header__location {
+		box-shadow: unset;
+	}
 
 	.section__title {
 		font-size: 2.4em;
