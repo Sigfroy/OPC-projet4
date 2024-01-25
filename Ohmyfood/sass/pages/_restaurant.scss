@@ -45,7 +45,7 @@
 		text-align: center;
 		flex: 80%;
 		height: 2.7em;
-		margin-right: 4em;
+		// margin-right: 4em;
 	}
 }
 
@@ -173,11 +173,12 @@
 
 	.main__card-container {
 		display: flex;
+		border-radius: 20px;
+		box-shadow: 0px 6px 15px lightgrey;
 		align-items: center;
 		text-align: left;
 		justify-content: space-between;
 		margin-bottom: 1em;
-		margin-left: 0.5em;
 	}
 
 	.main__card {
@@ -202,6 +203,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		transition: width 0.3s ease-in-out;
+		padding-left: 0.5em;
 	}
 
 	.main__price {
@@ -249,6 +251,7 @@
 		justify-content: center;
 		background: linear-gradient(to bottom right, #ff79da, #9356dc);
 		border-radius: 45px;
+		box-shadow: 0px 6px 7px lightgrey;
 		font-size: 1em;
 		color: white;
 		padding: 1em 1.4em;
@@ -284,17 +287,17 @@
 		width: 70%;
 	}
 	.main__title {
-		width: 60%;
+		width: 70%;
 		text-align: end;
 		margin-right: 1em;
-		margin-left: 8em;
+		// margin-left: 8em;
 	}
 	.card__heart {
-		width: 40%;
-		text-align: right;
+		width: 30%;
+		text-align: left;
 	}
 	.main .main__section-title {
-		width: 4%;
+		width: 30%;
 		font-size: 1em;
 	}
 	.main__btn {
