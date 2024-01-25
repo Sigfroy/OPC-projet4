@@ -79,16 +79,13 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-}
-.header__logo {
+
+&__logo {
 	width: 10em;
 	margin-top: 1.3em;
 }
-logo__container {
-	/* box-shadow: 0px 2px 10px rgb(8, 8, 8), 0px 2px 10px rgba(253, 253, 253, 0.15); */
-	width: 100%;
-}
-.header__location {
+
+&__location {
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 0.3em;
@@ -97,9 +94,11 @@ logo__container {
 	background-color: #eaeaea;
 	width: 100%;
 	padding: 1em;
+	box-shadow: 0px 2px 10px rgb(8, 8, 8)
 }
 .fa-solid {
 	margin-right: 0.6em;
+}
 }
 
 /****** call to action section ***********/
@@ -259,12 +258,6 @@ logo__container {
 }
 
 @media screen and (min-width: 1440px) {
-	// .header__logo {
-	// 	margin-bottom: 1em;
-	// 	margin-top: 1.7em;
-	// 	margin-left: 0.6em;
-	// 	width: 13em;
-	// }
 	.section__title {
 		font-size: 2.4em;
 		margin: 0.8em 1.2em 0 1.6em;

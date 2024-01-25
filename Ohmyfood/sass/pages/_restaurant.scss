@@ -32,6 +32,9 @@
 
 	&__arrow {
 		flex: 20%;
+		font-size: 1.2em;
+		margin-left: 0.5em;
+		color: black;
 	}
 
 	&__logo {
@@ -41,7 +44,8 @@
 		align-items: center;
 		text-align: center;
 		flex: 80%;
-		height: 2.5em;
+		height: 2.7em;
+		margin-right: 4em;
 	}
 }
 
@@ -49,7 +53,7 @@
 	display: flex;
 	flex-direction: column;
 	background: var(--background-color);
-	padding: 1em;
+	padding: 0 1em 1em 1em;
 	position: relative;
 	z-index: 1;
 
@@ -66,15 +70,19 @@
 		border-top-right-radius: 40px;
 		background-color: var(--background-color);
 		position: absolute;
-		top: -2em;
+		top: -3em;
 		left: 0;
 		width: 100%;
-		height: 50px;
+		height: 3em;
+	}
+
+	.menu {
+		margin-bottom: 1em;
 	}
 
 	&__title {
 		font-family: "Shrikhand", serif;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		margin-bottom: 1em;
 	}
 
@@ -101,7 +109,7 @@
 
 	.card__heart {
 		margin-right: 3em;
-		margin-bottom: 2.8em;
+		margin-bottom: 3.7em;
 	}
 
 	.main__section-title {
@@ -109,7 +117,7 @@
 		display: inline-block;
 		width: 8%;
 		margin-bottom: 0.5em;
-		font-size: 0.8em;
+		font-size: 1.05em;
 		text-transform: uppercase;
 		font-weight: lighter;
 	}
@@ -173,10 +181,19 @@
 	}
 
 	.main__card {
+		margin: 0.5em 0.5em 1em 0.3em;
 		font-size: 1em;
 		white-space: nowrap;
 		overflow: hidden;
 		flex: 1;
+	}
+
+	.main .main__card > h3 {
+		font-size: 1.1em;
+	}
+
+	.main__card > p {
+		font-size: 1em;
 	}
 
 	.main__card > h3,
