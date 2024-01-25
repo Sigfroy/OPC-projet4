@@ -363,7 +363,7 @@
   width: 100%;
 }
 .header__arrow {
-  flex: 20%;
+  flex: 10%;
   font-size: 1.2em;
   margin-left: 0.5em;
   color: black;
@@ -373,9 +373,12 @@
   padding-bottom: 1em;
   width: 10em;
   align-items: center;
-  text-align: center;
-  flex: 80%;
+  text-align: left;
+  flex: 90%;
   height: 2.7em;
+}
+.header__text {
+  margin-left: 1em;
 }
 
 .main {
@@ -570,9 +573,6 @@
     text-align: left;
     margin-left: 1.5em;
     flex: unset;
-  }
-  .header__text {
-    margin-left: 1em;
   }
   .restaurant__image {
     width: 100%;
