@@ -219,6 +219,9 @@
 	}
 
 /****** effet remplissage du coeur ***********/
+	.card__heart {
+		position: relative;
+	}
 	.fa-heart {
 		position: absolute;
 		transition: transform 0.3s ease-out;

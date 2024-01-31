@@ -89,30 +89,22 @@
 		margin-bottom: 1em;
 	}
 
+	/****** effet remplissage du coeur ***********/
+	.card__heart {
+		position: relative;
+	}
 	.fa-heart {
-		font-size: 1.4em;
 		position: absolute;
+		transition: transform 0.3s ease-out;
 	}
 
 	.full {
-		opacity: 0;
-		transition-property: all;
-		transition-duration: 0.2s;
+		color: #9747FF;
+		transform: scale(0);
 	}
 
-	.full:hover,
-	.full:active {
-		font-size: 1.4em;
-		opacity: 1;
-		color: transparent;
-		background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
-		background-clip: text;
-		-webkit-background-clip: text;
-	}
-
-	.card__heart {
-		margin-right: 3em;
-		margin-bottom: 3.7em;
+	.card__heart:hover .full {
+		transform: scale(1);
 	}
 
 	.main__section-title {

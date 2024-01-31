@@ -217,6 +217,9 @@
   margin-right: 2.3em;
   margin-bottom: 1.2em;
 }
+.restaurant .card__heart {
+  position: relative;
+}
 .restaurant .fa-heart {
   position: absolute;
   transition: transform 0.3s ease-out;
@@ -339,6 +342,7 @@
   padding: 0 1em 1em 1em;
   position: relative;
   z-index: 1;
+  /****** effet remplissage du coeur ***********/
   /****** effet d'apparition décalée des menus ***********/
 }
 .main__container {
@@ -366,27 +370,19 @@
   font-size: 1.75em;
   margin-bottom: 1em;
 }
+.main .card__heart {
+  position: relative;
+}
 .main .fa-heart {
-  font-size: 1.4em;
   position: absolute;
+  transition: transform 0.3s ease-out;
 }
 .main .full {
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 0.2s;
+  color: #9747FF;
+  transform: scale(0);
 }
-.main .full:hover,
-.main .full:active {
-  font-size: 1.4em;
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.main .card__heart {
-  margin-right: 3em;
-  margin-bottom: 3.7em;
+.main .card__heart:hover .full {
+  transform: scale(1);
 }
 .main .main__section-title {
   border-bottom: var(--third-color) 2px solid;
