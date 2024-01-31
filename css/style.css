@@ -219,6 +219,9 @@
 }
 .restaurant .card__heart {
   position: relative;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
 }
 .restaurant .fa-heart {
   position: absolute;
@@ -372,13 +375,16 @@
 }
 .main .card__heart {
   position: relative;
+  margin-right: 1em;
+  margin-bottom: 2.5em;
+  font-size: 1.5em;
 }
 .main .fa-heart {
   position: absolute;
   transition: transform 0.3s ease-out;
 }
 .main .full {
-  color: #9747FF;
+  color: #9747ff;
   transform: scale(0);
 }
 .main .card__heart:hover .full {
@@ -533,6 +539,7 @@
   }
   .restaurant .card__heart {
     margin-right: 2em;
+    margin-top: 0.5em;
   }
   .main {
     width: 70%;
