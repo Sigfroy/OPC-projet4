@@ -125,6 +125,8 @@
 		font-weight: lighter;
 	}
 
+	/****** effet d'apparition décalée des menus ***********/
+
 	@-webkit-keyframes fade-in-top {
 		0% {
 			-webkit-transform: translateY(-50px);
@@ -227,9 +229,9 @@
 	}
 
 	.checked i {
-		display: flex; /* Pour assurer le centrage de l'icône */
-		justify-content: center; /* Centrage horizontal de l'icône */
-		align-items: center; /* Centrage vertical de l'icône */
+		display: flex; 
+		justify-content: center; 
+		align-items: center; 
 		color: white;
 	}
 
@@ -267,6 +269,7 @@
 	}
 }
 
+/****** responsive ***********/
 @media screen and (min-width: 1440px) {
 	.header__arrow {
 		text-align: left;
@@ -296,7 +299,6 @@
 		width: 70%;
 		text-align: end;
 		margin-right: 1em;
-		// margin-left: 8em;
 	}
 	.card__heart {
 		width: 30%;

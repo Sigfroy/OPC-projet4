@@ -103,9 +103,6 @@
 		padding: 1em;
 		box-shadow: 1px 5px 5px lightgrey;
 	}
-	// .fa-solid {
-	// 	margin-right: 0.6em;
-	// }
 }
 
 /****** call to action section ***********/
@@ -220,78 +217,25 @@
 		margin-right: 2.3em;
 		margin-bottom: 1.2em;
 	}
-	.fa-regular {
-		font-size: 1.4em;
-		margin-bottom: 1.4em;
-		margin-right: 0.5em;
-	}
 
+/****** effet remplissage du coeur ***********/
 	.fa-heart {
 		position: absolute;
-	}
-
-	.fa-heart {
-		position: absolute;
+		transition: transform 0.3s ease-out;
 	}
 
 	.full {
-		opacity: 0;
-		transition: opacity 0.2s;
+		color: #9747FF;
+		transform: scale(0);
 	}
 
-	.card__heart:hover > .full {
-		font-size: 1.4em;
-		opacity: 1;
-		background-image: linear-gradient(to bottom right, #ff99ee, #a366dd);
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
-		animation: fillHeart 0.15s forwards;
+	.card__heart:hover .full {
+		transform: scale(1);
 	}
 
-	.card__heart > .full {
-		animation: emptyHeart 2s reverse forwards;
-	}
-
-	@keyframes fillHeart {
-		0% {
-			transform: scaleY(0);
-			transform-origin: bottom;
-		}
-		100% {
-			transform: scaleY(1);
-			transform-origin: bottom;
-		}
-	}
-
-	@keyframes emptyHeart {
-		0% {
-			transform: scaleY(1);
-			transform-origin: top;
-		}
-		20% {
-			transform: scaleY(0.8);
-			transform-origin: top;
-		}
-		40% {
-			transform: scaleY(0.6);
-			transform-origin: top;
-		}
-		60% {
-			transform: scaleY(0.4);
-			transform-origin: top;
-		}
-		80% {
-			transform: scaleY(0.2);
-			transform-origin: top;
-		}
-		100% {
-			transform: scaleY(0);
-			transform-origin: top;
-		}
-	}
 }
 
+/****** responsive ***********/
 @media screen and (min-width: 1440px) {
 	.header__location {
 		box-shadow: unset;
