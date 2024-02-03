@@ -196,6 +196,8 @@
 		font-size: 1em;
 	}
 
+/****** effet de rognage du nom des plats ***********/
+
 	.main__card > h3,
 	.main__card > p {
 		white-space: nowrap;
@@ -255,7 +257,7 @@
 		padding: 1em 1.4em;
 		margin: 1em 5em 0 5em;
 		border: none;
-		transition: var(--background-color) 0.3s ease;
+		// transition: var(--background-color) 0.3s ease;
 		margin-bottom: 1em;
 	}
 

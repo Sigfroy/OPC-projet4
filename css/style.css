@@ -126,7 +126,6 @@
   border: none;
   margin-top: 2.1em;
   margin-bottom: 4.7em;
-  transition: var(--background-color) 0.3s ease;
 }
 
 .section__btn:hover {
@@ -347,6 +346,7 @@
   z-index: 1;
   /****** effet remplissage du coeur ***********/
   /****** effet d'apparition décalée des menus ***********/
+  /****** effet de rognage du nom des plats ***********/
 }
 .main__container {
   display: flex;
@@ -515,7 +515,6 @@
   padding: 1em 1.4em;
   margin: 1em 5em 0 5em;
   border: none;
-  transition: var(--background-color) 0.3s ease;
   margin-bottom: 1em;
 }
 .main .main__btn:hover {
